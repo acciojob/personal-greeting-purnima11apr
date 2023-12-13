@@ -16,9 +16,10 @@ const Display = () => {
         <label htmlFor="name">Enter your name :</label>
         <br/>
         <input type="text" id="name" onChange={handleChange} value={name}/>
+        {name && <p>Hello {name}!</p>}
         </form>
 
-       {name && <p>Hello {name}!</p>}
+      
        
      </div>
     );
