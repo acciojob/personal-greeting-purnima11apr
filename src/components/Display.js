@@ -13,8 +13,7 @@ const Display = () => {
     return(
      <div>
         <form>
-        <label htmlFor="name">Enter your name :</label>
-        <br/>
+        <p>Enter your name :</p>
         <input type="text" id="name" onChange={handleChange} value={name}/>
         </form>
 
