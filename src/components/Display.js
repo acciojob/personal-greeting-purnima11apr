@@ -13,11 +13,11 @@ const Display = () => {
     return(
      <div>
         <form>
-        <label htmlFor="name">Enter your name :</label>
-        <br/>
+       
+        {name ? <p>Hello {name}!</p> : <p>Enter your name:</p>}
         <input type="text" id="name" onChange={handleChange} value={name}/>
         </form>
-        {name ?  <p>Hello {name}!  </p> : <p>Enter Your Name</p>}
+      
 
       
        
